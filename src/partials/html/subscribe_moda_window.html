@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+
+		<title>subscribe-modal</title>
+	</head>
+	<body>
+		<button type="button" class="button_subscribe_open" data-modal-open>Subscribe</button>
+
+		<div class="backdrop is-hidden" data-modal>
+			<div class="subscribe_modal">
+				<button type="button" class="subscribe_modal-close-btn" data-modal-close>&#10006;</button>
+
+				<div class="subscribe_modal-image"></div>
+
+				<h2 class="subscribe_modal-title">
+					Explore our
+					<br />
+					<span class="subscribe_modal-title_orange">new chocolate</span>
+					first!
+				</h2>
+
+				<form name="subscribe_modal-email-form">
+					<label class="subscribe_modal-label" for="user-email">
+						<input
+							class="subscribe_modal-email-input"
+							type="email"
+							placeholder="Enter your email"
+							id="subscribe_user-email"
+							autofocus
+							required
+							
+						/>
+						
+					</label>
+					<button class="subscribe_modal-form-btn" type="submit" data-modal-close>Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/modal.js"></script>
+	</body>
+</html>
